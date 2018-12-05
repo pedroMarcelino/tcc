@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+		<!-- Criar Conta de Usuário Comum(Consumidor de Quiosque -->
+		<meta charset="utf-8"/>		
+		<title>Criar conta - Avaliador de Quiosques</title>
+		<link rel="icon" href="img/icone2.png"/>	
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/estilo.css"/>
+		<script src="arquivo.js"></script>
+	</head>
+	
+	<body>
+		<div id="interface">
+			<fieldset id="fieldsetheader">
+				<header>
+					<a id="imagemheader" href="index.html"><img id="imgLogo" src="img/icone2.png" height="80px" width="100px"/></a>
+				</header>
+			</fieldset>
+			
+			<!-- ERRO AQUI, ELE NÃO POSTA O FORMULÁRIO PARA A CONFIRMACAO -->
+			
+			<form action="confirma_criar_conta.php" method="POST">
+				<fieldset id="fildLogin">				
+					<legend>CRIAR CONTA</legend>
+					<div class="form-group">
+   						<label for="email">Email :</label>
+    					<input type="email" name="temail" maxlength="50" required class="form-control" >
+  					</div>
+  					<div class="form-group">
+   						<label for="name">Nome :</label>
+    					<input type="name" name="tnome" maxlength="30" required class="form-control">
+  					</div>
+  					<div class="form-group">
+    					<label for="senha">Senha :</label>
+    					<input type="password" name="tsenha" required class="form-control">
+					</div>
+					<div class="form-group">
+    					<label for="confSenha">Confirma Senha :</label>
+    					<input type="password" name="tcsenha" required class="form-control">
+					</div>
+					<div class="form-group">
+						<button  type="submit" id="btnCadastrar" >Cadastrar-se</button>
+ 					</div>
+ 			
+ 			
+ 			</form>
+ 			
+ 			
+					<br/> Já possui uma conta? <a id="criar" href="login.html">Logue</a>!
+					<br/> Deseja cadastrar um Quiosque ? <a id="criar" href="cadastro_de_quiosque.html">Criar</a>!
+			</fieldset>
+
+			<fieldset id="fieldsetfooter">
+				<footer id="rodape">
+					<p>Copyright &copy; 2018 - by <a href="sitedaempresa.html" target="_blank">Team Temple</a></p>
+				</footer>
+			</fieldset>
+		</div>
+	</body>
+
+</html>

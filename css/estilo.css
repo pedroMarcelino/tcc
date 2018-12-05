@@ -1,0 +1,981 @@
+@charset "UTF-8";
+
+/* IMPORTAÇÕES */
+
+@import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans');
+
+/* CORPO */
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: white;
+	color: rgba(0, 0, 0, 1);
+}
+
+.pEstilo {
+	font-size: 150%;
+	color: black;
+}
+
+i {
+	color: #74767a;
+	font-size: 115%;
+}
+
+/*========================
+	PARTES DO INDEX 
+	
+	MOBILE 767
+	
+	0.0 HEADER APLICADOS A TODAS  TELAS
+	
+	1.0 INDEX
+		1.1 BUTTONS NAV
+		1.2 MODEL
+		1.3 MENU LATERAL
+	2.0 MONGAGUA.html
+	3.0 CADASTRO DE QUIOSQUE
+		3.1 INFORMAÇÔES DO QUIOSQUE
+		3.2 INFORMAÇÔES DO LUGAR
+		3.3 DESCRÇÂO DO QUISOQUE
+		3.4 INFORMAÇÕES DAS FOTOS
+		3.5 BUTTONS DA TELA DE CADASTRO DE QUIOSQUE
+	4.0 CSS PERFIL USUARIO
+		4.1 HEADER PERFIL USER
+		4.2 BORDA LATERAL DO PERFIL USER
+		4.3 BUTTONS PERFIL USER
+	5.0 CSS PERFIL PROPRIETÁRIO
+		5.1 HEADER PERFIL PROP
+		5.2 BORDA LATERAL DO PERFIL PROP
+		5.3 BUTTONS PERFIL PROP
+	6.0 INDEX LOGADO
+		6.1 BUTTON MENU
+	7.0 CONSULTAR QUIOSQUE
+		7.1 PARTE LATERAL
+		7.2 CONTEUDO
+		7.3 FOTOS
+==============================*/
+
+/*==========================================
+	0.0 HEADER APLICADOS A TODAS  TELAS
+============================================*/
+
+.navbar-inverse {
+	position: relative;
+	background-color: #ff944d;
+	padding: 0;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: black;
+}
+
+
+
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover {
+	background-color: #ff944d;
+}
+
+#imgLogo {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 15px;
+}
+
+#positionButtons {
+	margin-top: 2%;
+	margin-right: 3%;
+	float: right;
+}
+
+/*==================
+	1.0 INDEX
+====================*/
+
+/*=====================
+ 	1.1 BUTTONS NAV
+=======================*/
+
+#btnCad {
+	font-size: 150%;
+	background-color: transparent;
+	border: 2px solid white;
+	color: white;
+	margin-left: 2%;
+}
+
+#btnCad:hover {
+	background-color: white;
+	color: black;
+	text-decoration: underline;
+
+}
+
+
+#btnLogin {
+
+	font-size: 150%;
+	background-color: transparent;
+	border: 2px solid white;
+	color: white;
+}
+
+#btnLogin:hover {
+	background-color: white;
+	color: black;
+	text-decoration: underline;
+}
+
+
+.navbar-inverse .navbar-nav>li>a {
+	color: black;
+}
+
+.nav>li>a :hover {
+	color: blue;
+}
+
+
+
+/*============
+	1.2 MODEL
+==============*/
+
+#btnConectFacebook {
+	background-color: #4267b2;
+	border: 1px solid black;
+}
+
+#btnLogar {
+	border: 1px solid black;
+}
+
+#btnEnviar {
+	border: 1px solid black;
+}
+
+/*======================
+	1.3 MENU LATERAL
+=========================*/
+
+#menuLateral {
+
+	margin-top: 1%;
+}
+
+
+
+
+/*====================
+	2.0 MONGAGUA
+=====================*/
+
+#informacoes {
+	margin-left: 2%;
+}
+
+/*==============================
+	3.0 CADASTRO QUIOSQUE
+================================*/
+
+/*=================================
+	3.1 INFORMAÇÔES DO QUIOSQUE
+===================================*/
+
+#informacoesQuiosque {
+	margin-left: 5%;
+}
+
+/*=================================
+	3.2 INFORMAÇÔES DO LUGAR
+===================================*/
+
+#informacoesLugar {
+	margin-right: 5%;
+}
+
+/*===================================
+	3.3 DESCRÇÂO DO QUISOQUE
+=====================================*/
+
+#descricaoQuiosque {
+	margin-left: 5%;
+}
+
+
+/*==================================
+	3.4 INFORMAÇÕES DAS FOTOS
+====================================*/
+
+#descricaoFotos {
+	margin-right: 5%;
+}
+
+
+
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+	margin: 0px;
+	border: 2px solid #337ab7;
+	color: #337ab7;
+	background-color: white;
+}
+
+.fileUpload input.upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+/*==============================================
+	3.5 BUTTONS DA TELA DE CADASTRO DE QUIOSQUE
+================================================*/
+
+.buttons-cadasto {
+	margin-left: 35%;
+}
+
+.buttons-perfil {
+	margin-top: 5%;
+	margin-left: 40.5%;
+}
+
+#buttonCadastroQuiosque {
+	width: 150px;
+	height: 35px;
+	border-color: #00b300;
+	background-color: white;
+	color: #00b300;
+	border-radius: 5px 5px 5px 5px;
+	font-size: 20px;
+	margin-bottom: 10%;
+}
+
+#buttonCadastroQuiosque:hover {
+	background-color: #00b300;
+	color: white;
+}
+
+
+#buttonLimparQuiosque {
+	width: 150px;
+	height: 35px;
+	border-color: #ff3333;
+	background-color: white;
+	color: #ff3333;
+	border-radius: 5px 5px 5px 5px;
+	font-size: 20px;
+	margin-bottom: 10%;
+
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+#buttonLimparQuiosque:hover {
+	background-color: #ff3333;
+	color: white;
+}
+
+
+#buttonVoltarQuiosque {
+	width: 150px;
+	height: 35px;
+	border-color: #1a53ff;
+	background-color: white;
+	color: #1a53ff;
+	border-radius: 5px 5px 5px 5px;
+	font-size: 20px;
+	margin-bottom: 10%;
+}
+
+#buttonVoltarQuiosque:hover {
+	background-color: #1a53ff;
+	color: white;
+}
+
+
+
+
+
+
+
+/*=====================================
+	4.0 CSS PERFIL USUARIO
+===================================*/
+
+/*======================
+	4.1 HEADER PERFIL USUER
+=========================*/
+
+.navbar-inverse2 {
+	margin-left: 16.7%;
+	background-color: #ff944d;
+}
+
+/*========================
+	4.2 BORDA LATERAL DO PERFIL USER
+===========================*/
+
+#perfilUsuario {
+	position: fixed;
+	background-color: #34373a;
+	margin-top: 0%;
+	height: 100%;
+	color: white;
+}
+
+.circle {
+	margin-bottom: -15%;
+	border-radius: 100%;
+	width: 10px;
+	height: 10px;
+	background-color: green;
+}
+
+/*===========================
+	4.3 BUTTONS PERFIL USER
+=============================*/
+
+.glyphicon-pencil {
+	float: left;
+	color: #4d79ff;
+}
+
+
+.glyphicon-star {
+	float: left;
+	color: #ffff00;
+}
+
+#buttonFavorito {
+	margin-top: 3%;
+	background-color: #1d1d1d;
+	border: 1px solid white;
+	color: white;
+	width: 100%;
+	font-size: 130%;
+}
+
+
+/*=====================================
+	5.0 CSS PERFIL PROP
+===================================*/
+
+/*======================
+	5.1 HEADER PERFIL PROP
+=========================*/
+
+#perfil {
+	background-color: #1d1d1d;
+}
+
+#perfil2 {
+	background-color: #1d1d1d;
+}
+
+#fotoUser {
+    height: 130px;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	border-radius: 5px 5px 5px 5px;
+}
+
+#navEdit {
+	color: white;
+
+}
+
+#navCad {
+	color: white;
+
+}
+
+#navMyQq {
+	color: white;
+}
+
+#positionNav {
+	margin-top: 2.5%;
+	font-size: 130%;
+}
+
+#hrPerfil {
+	display: none;
+}
+
+.teste {
+	background-color: blue;
+}
+
+#meuQuiosque {
+	display: none;
+}
+
+
+#fotoQuiosque{
+	width: 90%;
+	height: 250px;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	border-radius: 5px 5px 5px 5px;
+	background-size: cover;
+	margin: 0 auto;
+	height: 320px;
+}
+
+@media only screen and (max-width: 767px) {
+	
+	#navEdit {
+		border: 1px solid white;
+		margin-top: 2%;
+		background-color: #404040;
+	}
+
+	#navCad {
+		border: 1px solid white;
+		margin-top: 2%;
+		background-color: #404040;
+	}
+
+	#navMyQq {
+		border: 1px solid white;
+		margin-top: 2%;
+		background-color: #404040;
+	}
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+		color: #9d9d9d;
+		color: black;
+		border: 1px solid black;
+		margin-top: 1%;
+	}
+}
+
+#navEditUsuario{
+	color: white;
+}
+
+#navFavoritos{
+	color: white;
+}
+
+#Cad {
+	display: none;
+}
+
+#Cad2 {
+	display: none;
+}
+
+#Cad3 {
+	display: none;
+}
+
+#btnExcluir {
+	width: 49%;
+	font-size: 115%;
+	color: #e52929;
+	border: 2px solid #e52929;
+}
+
+#btnExcluir:hover {
+	color: white;
+	background-color: #e52929;
+	border: 2px solid black;
+}
+
+
+#btnAlterar {
+	width: 50%;
+	font-size: 115%;
+	color: #009df9;
+	border: 2px solid #009df9;
+}
+
+#btnAlterar:hover {
+	color: white;
+	background-color: #009df9;
+	border: 2px solid black;
+}
+
+#confExclusao {
+	/*float: left;*/
+	width: 49%;
+	font-size: 115%;
+	color: #1ea822;
+	border: 2px solid #1ea822;
+}
+
+#confExclusao:hover{
+	color: white;
+	background-color: #1ea822;
+	border: 2px solid black;
+}
+
+#confEnvio{
+	float: left;
+	font-size: 115%;
+	color: #1ea822;
+	border: 2px solid #1ea822;
+}
+
+#confEnvio:hover{
+	color: white;
+	background-color: #1ea822;
+	border: 2px solid black;
+}
+
+#cancelExclusao{
+	width: 49%;
+	font-size: 115%;
+	color: #e52929;
+	border: 2px solid #e52929;
+}
+
+#cancelExclusao:hover{
+	color: white;
+	background-color: #e52929;
+	border: 2px solid black;
+}
+
+@media only screen and (max-width: 1500px) {
+	#descricaoftparte2 {
+		margin-left: 15%;
+	}
+	
+}
+
+@media only screen and (max-width: 1021px) {
+	#descricaoftparte2 {
+		margin-left: 20%;
+	}
+	
+}
+
+@media only screen and (max-width: 899px) {
+	#descricaoftparte2 {
+		margin-left: 25%;
+	}
+	
+}
+
+@media only screen and (max-width: 906px) {
+	/*#descricaoftparte2 {*/
+	/*	margin-left: 20%;*/
+	/*}*/
+}
+
+@media only screen and (max-width: 797px) {
+	#descricaoftparte2 {
+		margin-left: 30%;
+	}
+	
+	#descricao{
+		margin-left: 0%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#descricaoftparte2 {
+		margin-left: 0%;
+	}
+	
+	#descricao{
+		margin-left: 0%;
+	}
+}
+
+@media only screen and (max-width: 845px) {
+	#descricao{
+		margin-left: 15%;
+	}
+	
+	#btAlterar{
+		width: 40%;
+	}
+	#btnexcluir{
+		width: 10%;
+	}
+}
+
+
+
+/*========================
+	6.0 INDEX LOGADO
+==========================*/
+
+/*========================
+	6.1 BUTTON MENU
+==========================*/
+
+#buttonMenu {
+	background-color: transparent;
+	border: 2px solid black;
+	color: black;
+	margin-bottom: 2%
+}
+
+.dropdown-menu2 {
+	margin-right: 100%;
+}
+
+#hrMenu {
+	margin-top: -1.5%;
+	margin-bottom: -1.5%;
+}
+
+
+/*=================================
+	7.0 CONSULTAR QUIOSQUE
+===================================*/
+
+/*===============================
+	7.1 PARTE LATERAL
+===============================*/
+
+#informacoesBusca {
+	margin-top: 2%;
+	font-size: 125%;
+	color: white;
+}
+
+
+#fotoDono {
+	margin-top: 2%;
+	height: auto;
+	width: 70%;
+}
+
+.container-fluid>.navbar-collapse,
+.container-fluid>.navbar-header,
+.container>.navbar-collapse,
+.container>.navbar-header {
+	margin-right: 0;
+	margin-left: 0;
+	width: 35%;
+}
+
+#exibirInformacoes {
+	margin-top: 2%;
+	color: white;
+	font-size: 120%;
+}
+
+#exibirInformacoes2 {
+	margin-top: 13%;
+	color: white;
+	font-size: 140%;
+	margin-right: 5%;
+}
+
+
+
+#exibirPerfil {
+	margin-top: -1.3%;
+	border: 2px solid black;
+	color: white;
+	background-color: #42464c;
+}
+
+#fotoDono {
+	margin-top: 2%;
+	height: auto;
+	width: 40%;
+	margin-bottom: 2%;
+}
+
+
+
+#btnAvaliar {
+	position: absolute;
+	left: 35%;
+	margin-top: 15%;
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 8px;
+	color: white;
+	font-size: 110%;
+
+
+}
+
+#Avaliador {
+	font-size: 130%;
+}
+
+#fotoDono {
+	margin-top: 2%;
+	height: auto;
+	width: 40%;
+}
+
+#ediatarPerfil {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#buttonAlterarQuiosque {
+	width: 150px;
+	height: 35px;
+	border-color: #ff9900;
+	background-color: white;
+	color: #ff9900;
+	border-radius: 5px 5px 5px 5px;
+	font-size: 20px;
+	margin-bottom: 0%;
+}
+
+#buttonAlterarQuiosque:hover {
+	background-color: #ff9900;
+	color: white;
+}
+
+#editPerfil {
+	display: block;
+}
+
+#editPerfilUsuario {
+	visibility: hidden;
+}
+
+.estrelaComida input[type=radio]{
+	display: none;
+}
+
+.estrelaComida label i.fa:before{
+	content: '\f005';
+	color: #fC0;
+}
+
+.estrelaComida input[type=radio]:checked ~ label i.fa:before{
+	color: #ccc;
+}
+
+
+
+.estrelaAreia input[type=radio]{
+	display: none;
+}
+
+.estrelaAreia label i.fa:before{
+	content: '\f005';
+	color: #fC0;
+}
+
+.estrelaAreia input[type=radio]:checked ~ label i.fa:before{
+	color: #ccc;
+}
+
+
+
+.estrelaAtendimento input[type=radio]{
+	display: none;
+}
+
+.estrelaAtendimento label i.fa:before{
+	content: '\f005';
+	color: #fC0;
+}
+
+.estrelaAtendimento input[type=radio]:checked ~ label i.fa:before{
+	color: #ccc;
+}
+
+
+
+.estrelaLimpeza input[type=radio]{
+	display: none;
+}
+
+.estrelaLimpeza label i.fa:before{
+	content: '\f005';
+	color: #fC0;
+}
+
+.estrelaLimpeza input[type=radio]:checked ~ label i.fa:before{
+	color: #ccc;
+}
+
+
+
+
+.estrelaPreco input[type=radio]{
+	display: none;
+}
+
+.estrelaPreco label i.fa:before{
+	content: '\f005';
+	color: #fC0;
+}
+
+.estrelaPreco input[type=radio]:checked ~ label i.fa:before{
+	color: #ccc;
+}
+
+.bs-example{
+	margin: 20px;
+}
+
+#alerta{
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+
+#exibirNome{
+	margin-top: 2%;
+	margin-left: -10%;
+	color: white;
+}
+
+#inputErro{
+	border-color: #ff7c7f;
+	color: #ff7c7f;
+}
+
+#inputSucesso{
+	border-color: #008c07;
+	color: #008c07;
+}
+
+#favoritar{
+	position: absolute;
+	margin-top: 15%;
+	left: 75%;
+	font-size: 110%;
+	border-radius: 8px 8px 8px 8px;
+	background-color: transparent;
+	border: 2px solid white;
+	color: white;
+}
+
+#desfavoritar{
+	font-size: 125%;
+	color: #fC0;
+}
+
+#btnDesfavoritar{
+	border: 2px solid #fC0;
+	font-size: 125%;
+}
+
+
+
+#alterarBtn{
+	border: 2px solid #4286f4;
+	color: #4286f4;
+	font-size: 115%;
+	border-radius: 15px 15px 15px 15px;
+}
+
+#alterarBtn:before{
+	font-family: FontAwesome; 
+	content:"\f05a";
+}
+
+#boxPerfil{
+	border: 2px solid black;
+	height: auto;
+}
+
+
+#fotoQuiosquePerfil{
+	width: 70%;
+	height: 10%;
+	border-radius: 50%;
+	margin-bottom: 5%;
+	background-size: cover;
+	
+}
+
+#boxAvaliacao{
+	margin-top: 3%;
+	border: 2px solid black;
+	height: auto;
+	font-size: 115%;
+	padding: 2px;
+}
+
+#boxAvaliacao2{
+	border: 2px solid black;
+	height: auto;
+	font-size: 115%;
+	padding: 2px;
+}
+
+#editfoto {
+	position: relative;
+	overflow: hidden;
+	margin: 0px;
+	border: 2px solid black;
+	color: black;
+	background-color: transparent;
+	font-size: 120%;
+}
+
+#editfoto:before{
+	font-family: FontAwesome; 
+	content:"\f040";
+}
+
+#editfoto input.upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+#btnDeleta{
+	border-bottom-color: red;
+	font-size: 115%;
+	border-bottom: 2px solid;
+	color: red;
+}
+
+#btnDeleta:hover{
+	background-color: red;
+	color: white;
+	border-bottom-color: black;
+}
+
+
+#acabei{
+	background-size: cover;
+	margin: 0 auto;
+	height: 320px;
+}
+
+
+#excluir:before{
+	font-family: FontAwesome;
+	content:"\f014";
+	font-size: 130%;
+}
+
+#excluir{
+	width: 25%;
+}
+
+#alterar{
+	width: 73%;
+	font-size: 130%;
+}
+
+#visualizar{
+	margin-bottom: 2%;
+	border: 2px solid #ff8800;
+	color: #ff8800;
+}

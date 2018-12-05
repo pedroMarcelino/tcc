@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+	<!-- -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Acentuação -->
+	<title>Cadastro de Quiosque - Avaliador de Quiosques</title>
+	<!-- Título da aba do navegador -->
+	<meta name="description" content="O lugar ideal para avaliar e encontrar quiosques na baixada santista." />
+	<!-- Descrição do site para o nevegador -->
+	<link rel="icon" href="img/icone2.png" />
+	<!-- Icone da aba do navegador -->
+	<script src="arquivo.js"></script>
+	<!-- Chamando JAVASCRIPT -->
+	<!-- Código CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/estilo.css">
+
+	<script language="JavaScript">
+		function mascara(t, mask) {
+			var i = t.value.length;
+			var saida = mask.substring(1, 0);
+			var texto = mask.substring(i)
+			if (texto.substring(0, 1) != saida) {
+				t.value += texto.substring(0, 1);
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<div class="nav navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="navbar-header">
+							<a id="imagemheader" href="proprietarioLogado.html"><img id="imgLogo" src="img/icone2.png" height="80px" width="100px"/></a>
+						</div>
+					</div>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6">
+				<fieldset id="informacoesQuiosque">
+					<legend>Informações do Quiosque</legend>
+
+					<div class="form-group">
+						<label for="name">Nome :</label>
+						<input type="text" maxlength="50" class="form-control" placeholder="Digite o nome do Quiosque" required/>
+					</div>
+
+					<div class="form-group">
+						<label for="endereco">Endereço :</label>
+						<input type="text" maxlength="50" class="form-control" placeholder="Digite seu endereço" required/>
+					</div>
+
+					<div class="form-group">
+						<label for="endereco">Telefone :</label>
+						<input type="text" class="form-control" name="telefone" placeholder="Ex.: 13 9 8847-4444" onkeypress="mascara(this, '## ####-####')" maxlength="12">
+					</div>
+
+					<div class="form-group">
+						<label for="hora-cons">Horário de funcionamento: </label>
+						<input id="hora-cons" type="time" name="hora-cons" value="--:--">
+					</div>
+
+					<div class="form-group">
+						<label for="hora-cons">Horário de encerramento: </label>
+						<input id="hora-cons" type="time" name="hora-cons" value="--:--">
+					</div>
+
+					<div class="form-group">
+						<label for="ftQuiosque">Foto Quiosque :</label>
+						<input type="file" name="timagem_quiosque" id="cimagem_quiosque" accept="image/png, image/jpeg" required />
+					</div>
+				</fieldset>
+			</div>
+
+			<div class="col-sm-6">
+				<fieldset id="informacoesLugar">
+					<legend>Onde Fica ?</legend>
+					<div class="form-group">
+						<label style="margin-top: 1px;">Estado :</label>
+						<select class="form-control">
+    								<option value="SP">São Paulo</option>
+    							</select>
+						<label style="margin-top: 13px;">Cidade :</label>
+						<select class="form-control">
+    								<option value="SP">Santos</option>
+    								<option value="SP">Guarujá</option>
+    								<option value="SP">Praia Grande</option>
+    								<option value="SP">São Vicente</option>
+    								<option value="SP">Itanhaém</option>
+    								<option value="SP">Peruíbe</option>
+    								<option value="SP">Mongaguá</option>
+    							</select>
+					</div>
+				</fieldset>
+
+			</div>
+
+		</div>
+	</div>
+	<hr>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6">
+				<fieldset id="descricaoQuiosque">
+					<legend>Descrição do Quiosque</legend>
+					<div class="form-group shadow-textarea">
+						<textarea style="resize: none; text-align: justify;" class="form-control z-depth-1" rows="9" placeholder="Ex.: Este quiosque oferece total conforto e qualidade, desde a estrutura, até as refeições feitas à você! Aceitamos cartão e cobramos o consumo por pessoa! Venha nos visitar!"></textarea>
+					</div>
+				</fieldset>
+			</div>
+			<div class="col-sm-6">
+				<fieldset id="descricaoFotos">
+					<legend>Descrição em Fotos</legend>
+					<div class="col-sm-3">
+						<div class="form-group">
+							<div class="fileUpload btn btn-primary">
+								<span> Upload das Fotos </span>
+								<input type="file" class="upload" />
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="fileUpload btn btn-primary">
+								<span> Upload das Fotos </span>
+								<input type="file" class="upload" />
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="fileUpload btn btn-primary">
+								<span> Upload das Fotos </span>
+								<input type="file" class="upload" />
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3" id="descricaoftparte2">
+						<div class="form-group">
+							<div class="fileUpload btn btn-primary">
+								<span> Upload das Fotos </span>
+								<input type="file" class="upload" />
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="fileUpload btn btn-primary">
+								<span> Upload das Fotos </span>
+								<input type="file" class="upload" />
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="fileUpload btn btn-primary">
+								<span> Upload das Fotos </span>
+								<input type="file" class="upload" />
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="form-group">
+					<div class="buttons-cadasto">
+						<input id="buttonCadastroQuiosque" type="submit" name="tcadastrar" value="CADASTRAR" />
+						<input id="buttonLimparQuiosque" type="reset" name="tlimpar" value="LIMPAR" />
+						<input id="buttonVoltarQuiosque" type="button" name="tvoltar" value="VOLTAR" onclick="javascript: location.href='perfil_quiosqueiro.html'" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
+
+<!--
+	<fieldset id="fieldsetcorpo">
+		<section id="corpo">
+			<nav id="dados_quiosque">
+
+
+				<fieldset id="infQuiosq">
+					<legend>Informações do Quiosque</legend>
+					<div class="form-group">
+						<label for="ftQuiosque">Foto Quiosque :</label>
+						<input type="file" name="timagem_quiosque" id="cimagem_quiosque" accept="image/png, image/jpeg" required />
+					</div>
+
+					<div class="form-group">
+						<label for="name">Nome :</label>
+						<input type="text" maxlength="50" class="form-control" placeholder="Digite o nome do Quiosque" required/>
+					</div>
+
+					<div class="form-group">
+						<label for="endereco">Endereço :</label>
+						<input type="text" maxlength="50" class="form-control" placeholder="Digite seu endereço" required/>
+					</div>
+
+					<div class="form-group">
+						<label for="endereco">Horário :</label>
+						<input type="text" maxlength="11" class="form-control" placeholder="Digite os 2 horarios de funcionamento" onkeypress="mascara(this, '##h## ##h##')" required/>
+					</div>
+
+					<div class="form-group">
+						<label for="endereco">Telefone :</label>
+						<input type="text" class="form-control" name="telefone" placeholder="Ex.: 13 9 8847-4444" onkeypress="mascara(this, '## ####-####')" maxlength="12">
+					</div>
+
+
+				</fieldset>
+				<fieldset id="infDono">
+					<legend>Informações do Dono</legend>
+					<div class="form-group">
+						<label for="ftDonoQuioq">Foto :</label>
+						<input type="file" name="timagem_quiosqueiro" id="cimagem_quiosqueiro" accept="image/png, image/jpeg" required />
+					</div>
+
+					<div class="form-group">
+						<label for="name">Nome :</label>
+						<input type="name" maxlength="50" class="form-control" placeholder="Digite seu nome" required/>
+					</div>
+				</fieldset>
+				<fieldset id="infLugar">
+					<legend>Onde Fica ?</legend>
+					<div class="form-group">
+						<label style="margin-top: 1px;">Estado :</label>
+						<select class="form-control">
+    								<option value="SP">São Paulo</option>
+    							</select>
+						<label style="margin-top: 10px;">Cidade :</label>
+						<select class="form-control">
+    								<option value="SP">Santos</option>
+    								<option value="SP">Guarujá</option>
+    								<option value="SP">Praia Grande</option>
+    								<option value="SP">São Vicente</option>
+    								<option value="SP">Cubatão</option>
+    								<option value="SP">Itanhaém</option>
+    								<option value="SP">Bertioga</option>
+    								<option value="SP">Peruíbe</option>
+    								<option value="SP">Mongaguá</option>
+    							</select>
+					</div>
+				</fieldset>
+				<hr/>
+			</nav>
+		</section>
+	</fieldset>
+	</div>
+	<aside id="lateral">
+		<fieldset id="fildDesc">
+			<legend>Breve descrição do Quiosque</legend>
+			<div class="form-group shadow-textarea">
+				<textarea style="resize: none; text-align: justify;" class="form-control z-depth-1" rows="9" placeholder="Ex.: Este quiosque oferece total conforto e qualidade, desde a estrutura, até as refeições feitas à você! Aceitamos cartão e cobramos o consumo por pessoa! Venha nos visitar!"></textarea>
+			</div>
+		</fieldset>
+
+		<fieldset id="infFotos">
+			<legend>Ponha fotos do seus quiosque (Menu, Comidas, Bebidas)</legend>
+			<div class="form-group">
+				<label for="cimg_um">1ª FOTO</label>
+				<input type="file" name="timg_um" accept="image/png, image/jpeg" required />
+			</div>
+
+			<div class="form-group">
+				<label for="cimg_dois">2ª FOTO</label>
+				<input type="file" name="timg_dois" id="cimg_dois" accept="image/png, image/jpeg" required />
+			</div>
+
+			<div class="form-group">
+				<label for="cimg_tres">3ª FOTO</label>
+				<input type="file" name="timg_tres" id="cimg_tres" accept="image/png, image/jpeg" required />
+			</div>
+
+			<div class="form-group">
+				<label for="cimg_quatro">4ª FOTO</label>
+				<input type="file" name="timg_quatro" id="cimg_quatro" accept="image/png, image/jpeg" required />
+			</div>
+
+			<div class="form-group">
+				<label for="cimg_cinco">5ª FOTO</label>
+				<input type="file" name="timg_cinco" id="cimg_cinco" accept="image/png, image/jpeg" required />
+			</div>
+		</fieldset>
+
+
+		<div class="form-group">
+			<input id="btnCadQ" type="submit" name="tcadastrar" value="CADASTRAR" />
+			<input id="btnLimpQ" type="reset" name="tlimpar" value="LIMPAR" />
+			<input id="btnVoltaQ" type="button" name="tvoltar" value="VOLTAR" onclick="javascript: location.href='perfil_quiosqueiro.html'" />
+		</div>
+		</fieldset>
+
+		<fieldset id="fieldsetfooter">
+			<footer id="rodape">
+				<p>Copyright &copy; 2018 - by <a href="sitedaempresa.html" target="_blank">Team Temple</a></p>
+			</footer>
+		</fieldset>
+		</div>-->
